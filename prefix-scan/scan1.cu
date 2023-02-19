@@ -28,7 +28,7 @@ __global__ void scan_kernel(const float* input, float* output, int n) {
     }
     __syncthreads();
     if (index < n)
-        output[index] = temp[tid]; //output[index] = 
+        output[index] = temp[tid];  
     
 }
 
@@ -54,9 +54,7 @@ __host__ void scan(const float* input, float* output, unsigned int n, unsigned i
     unsigned int blocks = ((((n) + threads_per_block -1)/threads_per_block));
     unsigned int sdata_size = 2*threads_per_block;
     scan_kernel<<<blocks,threads_per_block, sdata_size>>>(input,output, n);
-    //unsigned int n_blocks = ((((n) + threads_per_block -1)/threads_per_block));
-    
-        //scan_kernel<<<i,threads_per_block, sdata_size>>>(*input,output, n, threads_per_block);
+   
     extra <<< blocks, threads_per_block >>> (input,output,blocks, n);
     
 }

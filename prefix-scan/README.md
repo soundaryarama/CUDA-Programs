@@ -21,6 +21,6 @@ Taking the total number of elements as p, in the first iteration we see there ar
                                                                   
 In general, the algorithm would perform (2<sup>p </sup> - 2<sup>0 </sup>) + (2<sup>p </sup> - 2<sup>1 </sup>) + .....+ (2<sup>p </sup> - 2<sup> p - 1 </sup>) 
 
-p * 2<sup>p </sup> - (2<sup>0 </sup> + ... + 2<sup> p - 1 </sup>) = p * 2<sup>p </sup> - 2<sup>p </sup> + 1 = n(log<sub>2</sub>(n) - 1) + 1 
+p * 2<sup>p </sup> - (2<sup>0 </sup> + ... + 2<sup> p - 1 </sup>) = p * 2<sup>p </sup> - 2<sup>p </sup> + 1 = n * (log<sub>2</sub>(n) - 1) + 1 
 
-Hence the algorithm requires O(n*log<sub>2</sub>(n)) additions.
+Hence the algorithm requires O(n * log<sub>2</sub>(n)) additions.

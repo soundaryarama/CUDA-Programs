@@ -65,25 +65,6 @@ int main(int argc, char *argv[]){
     printf("%f ", output[n-1]); printf("\n");
     printf("%f ", ms); printf("\n");
 
-    printf("Image is  ");
-    for(int i = 0; i < n; ++i){
-        
-        printf("%f ", image[i]);
-    }
-    printf ("\n");
-    printf("Mask is  ");
-     for(int i = 0; i < 2*R+1; ++i){
-        
-        
-        printf("%f ", mask[i]);
-    }
-    printf ("\n");
-    printf("Output is  ");
-     for(int i = 0; i < n; ++i){
-        
-        
-        printf("%f ", output[i]);
-    }
-    printf ("\n");
+
 return 0;
 }

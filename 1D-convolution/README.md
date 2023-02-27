@@ -11,7 +11,7 @@ In this operation, the stencil function computes the convolution of image and ma
 
 ![image](https://user-images.githubusercontent.com/113553039/221671170-9815e3f3-9f44-488f-a191-32874ae6baac.png)
 
-
+This function is executed in the file 'stencil.cu' considering appropriate boundary conditions as well.   
 
                           
 

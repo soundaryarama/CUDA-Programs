@@ -67,46 +67,5 @@ int main(int argc, char *argv[]){
  
     printf("%f ", result[(n*n)-1]); printf("\n");
     printf("%f ", ms); printf("\n");
-    /*
-    printf("A is  ");
-    for(int i = 0; i < n*n; ++i){
-        
-        printf("%f ", A[i]);
-    }
-    printf ("\n");
-    printf("B is  ");
-     for(int i = 0; i < n*n; ++i){
-        
-        
-        printf("%f ", B[i]);
-    }
-    printf ("\n");
-    printf("C is  ");
-     for(int i = 0; i < n*n; ++i){
-        
-        
-        printf("%f ", result[i]);
-    }
-    printf ("\n");
-
-    //Check if answer is correct
-    printf("CHECK: \n");
-    printf("FIRST ELEMENT: ");
-    float value = 0;
-    for (int i = 0; i < n; i++){
-        float first = A[i];
-        float second = B[i*n];
-        value += first*second; 
-    }
-    printf("%f \n", value);
-
-    printf("LAST ELEMENT: ");
-    float value1 = 0;
-    for (int i = 0; i < n; i++){
-        float first = A[n*n - n + i];
-        float second = B[(n-1)+i*n];
-        value1 += first*second; 
-    }
-    printf("%f \n", value1);*/
-    return 0;
+   
 }

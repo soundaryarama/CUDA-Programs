@@ -9,3 +9,9 @@ Each output element is the sum of the input elements within a radius. In the exa
 
 In this operation, the stencil function computes the convolution of image and mask to produce the output. The image, mask, output are initialized in managed memory in the host and shared memory is allocated inside the kernel dynamically. The convolution function is given as:
 
+![image](https://user-images.githubusercontent.com/113553039/221671170-9815e3f3-9f44-488f-a191-32874ae6baac.png)
+
+
+
+                          
+

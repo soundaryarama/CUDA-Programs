@@ -63,13 +63,10 @@ __host__ void stencil(const float* image,
                       float* output,
                       unsigned int n,
                       unsigned int R,
-                      unsigned int threads_per_block){
-
+                      unsigned int threads_per_block){  
                                                         size_t blocks = (((n) + threads_per_block -1)/threads_per_block);
                                                         int sdata_size = ((2*R + threads_per_block) + (2*R+1) + (threads_per_block)) * sizeof(float);
                                                         stencil_kernel<<<blocks,threads_per_block, sdata_size>>>(image, mask, output, n, R);
-
-
                       }
 
 

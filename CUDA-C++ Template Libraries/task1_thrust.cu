@@ -28,7 +28,6 @@ int main(int argc, char *argv[]){
     cudaEvent_t stop;
     cudaEventCreate(&start);
     cudaEventCreate(&stop);
-    
     cudaEventRecord(start);
 
     float result = thrust::reduce(d_vec.begin(), d_vec.end());
@@ -52,9 +51,6 @@ int main(int argc, char *argv[]){
     }
     printf("Correct answer is  ");
     printf("%f ", check); printf("\n");*/
-
-
-
     
     return 0;
 }
